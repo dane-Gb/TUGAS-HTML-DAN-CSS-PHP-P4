@@ -1,7 +1,15 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    echo "Terima kasih, $name! Kami akan menghubungi Anda di $email.";
-}
+// Mengambil nilai
+$name = $_POST["name"];
+$email = $_POST["email"];
+$kelamin = $_POST["kelamin"];
+$tanggallahir = $_POST["tanggallahir"];
+$umur = $_POST["umur"];
+
+echo("Nama: {$name} <br>");
+echo("Email: {$email} <br>");
+echo("Jenis Kelamin: {$kelamin} <br>");
+echo("Tanggal Lahir: {$tanggallahir} <br>");
+echo("Umur kamu saat ini: {$umur} <br>");
 ?>
+
