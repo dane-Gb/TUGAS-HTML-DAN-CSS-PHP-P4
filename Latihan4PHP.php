@@ -46,19 +46,33 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-8">
              
                 <form action="contact_confirmation.php" method="POST">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name"><br><br>
-         
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-         
-                <input type="submit" value="Submit">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name"><br><br>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="kelamin">Jenis Kelamin:</label>
+                    <select id="kelamin" name="kelamin" required>
+                        <option value="male">Laki-laki</option>
+                        <option value="female">Perempuan</option>
+                    </select><br><br>
+
+                    <label for="tanggallahir">Tanggal Lahir:</label>
+                    <input type="date" id="tanggallahir" name="tanggallahir" required><br><br>
+
+                    <label for="umur">Umur:</label>
+                    <input type="number" id="umur" name="umur" required><br><br>>
+
+                    <input type="submit" value="Submit">
+            
                 </form>
 
             </div>
+
             <div class="col-sm-4">
                 <h3>Kolom 2</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
@@ -66,17 +80,11 @@
                 since the 1500s, when an unknown printer took a galley of type and scrambled it to
                  make a type specimen book. </p>
             </div>
-            <div class="col-sm-4">
-                <h3>Kolom 3</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-                industry. Lorem Ipsum has been the industry's standard dummy text ever 
-                since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                 make a type specimen book. </p>
-            </div>
+           
         </div>
 
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-sm-4">
                 <h3>Kolom 1</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
                 industry. Lorem Ipsum has been the industry's standard dummy text ever 
@@ -91,6 +99,15 @@
                 since the 1500s, when an unknown printer took a galley of type and scrambled it to
                  make a type specimen book. </p>
             </div>
+
+            <div class="col-sm-4">
+                <h3>Kolom 3</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                industry. Lorem Ipsum has been the industry's standard dummy text ever 
+                since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                 make a type specimen book. </p>
+            </div>
+            
         </div>
 
     </div>
